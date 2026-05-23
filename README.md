@@ -62,6 +62,11 @@ PRs and issues are welcome. If you add features, please include tests or manual 
 
 MIT
 
+## Live Demo
+
+[View the live app on Vercel](https://weather-app-two-delta-53.vercel.app/)
+
 ## Author
 
 Abdullah — https://github.com/Abdullah7-byte
+
