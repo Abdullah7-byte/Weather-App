@@ -1,16 +1,67 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React + Vite app that shows current weather for a searched city using the OpenWeather API.
 
-Currently, two official plugins are available:
+Live dev: fast HMR with Vite, production builds with `vite build`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Repository: https://github.com/Abdullah7-byte/weather-app
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Search for a city and see current temperature and weather conditions
+- Responsive, minimal UI with a focused weather card
+- Uses OpenWeather's Current Weather API
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js 18+ (or compatible LTS)
+- npm (or use `pnpm`/`yarn` as preferred)
+
+## Setup
+
+1. Install dependencies
+
+```bash
+npm install
+```
+
+2. Create a `.env` file in the project root with your OpenWeather API key (do not commit this file):
+
+```text
+VITE_OPENWEATHER_KEY=your_openweather_api_key_here
+```
+
+You can copy `.env.example` and fill your key.
+
+3. Run the dev server
+
+```bash
+npm run dev
+```
+
+Open http://localhost:5173 (or the port Vite reports) to view the app.
+
+## Build & Preview
+
+```bash
+npm run build
+npm run preview
+```
+
+## Notes & Best Practices
+
+- Do not commit your API keys — keep them in local environment variables.
+- The app expects `VITE_OPENWEATHER_KEY` to be available at `import.meta.env.VITE_OPENWEATHER_KEY`.
+- `dist/` is ignored in `.gitignore` — deploy the `dist` output to your chosen static host (Netlify, Vercel, GitHub Pages, etc.).
+
+## Contributing
+
+PRs and issues are welcome. If you add features, please include tests or manual test steps.
+
+## License
+
+MIT
+
+## Author
+
+Abdullah — https://github.com/Abdullah7-byte
